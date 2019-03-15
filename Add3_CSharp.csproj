@@ -11,11 +11,12 @@ namespace Add3_CSharp.csproj
         {
             SolidWorksMacro test = new SolidWorksMacro();
 
+
             test.Main();
         }
     }
 
-    partial class SolidWorksMacro
+    class SolidWorksMacro
     {
 	    Feature swFeature;
         SelectionMgr swSelectionManager;
@@ -49,8 +50,8 @@ namespace Add3_CSharp.csproj
 			Console.WriteLine("Enter Width");
 			float width = Convert.ToSingle(Console.ReadLine());
 
-			myDimension.SystemValue = length/37.37;
-			myDimension2.SystemValue = width/37.37;
+			myDimension.SystemValue = length/39.37;
+			myDimension2.SystemValue = width/39.37;
 			swModel.ForceRebuild3(true);
 			Console.WriteLine("Enter E to exit or C to enter new dimensions");
 			end = Console.ReadLine();
