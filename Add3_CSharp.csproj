@@ -1,0 +1,58 @@
+
+using SolidWorks.Interop.swconst;
+using System.Runtime.InteropServices;
+using System;
+using SldWorks;
+namespace Add3_CSharp.csproj
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SolidWorksMacro test = new SolidWorksMacro();
+
+            test.Main();
+        }
+    }
+
+    partial class SolidWorksMacro
+    {
+	    Feature swFeature;
+        SelectionMgr swSelectionManager;
+        Dimension swDim;
+		
+        public void Main()
+        {
+		    
+			
+			
+           
+		    ModelDoc2 swModel;
+			
+			SldWorks.SldWorks swApp = new SldWorks.SldWorks();
+            swModel = swApp.OpenDoc6("C:\\Users\\Jason Salliotte\\Downloads\\Test\\Test.sldprt", (int)swDocumentTypes_e.swDocPART, (int)swOpenDocOptions_e.swOpenDocOptions_Silent, "",  1,  1);
+            swApp.Visible = true;
+
+           
+            Dimension myDimension = default (Dimension);
+
+			myDimension = (Dimension)swModel.Parameter("D1@Sketch1");
+		
+
+			myDimension.SystemValue = 1/39.37;
+			swModel.ForceRebuild3(true);
+            Console.WriteLine("test");
+            Console.ReadLine();
+
+        }
+
+
+        
+
+
+
+       
+
+    }
+
+}
