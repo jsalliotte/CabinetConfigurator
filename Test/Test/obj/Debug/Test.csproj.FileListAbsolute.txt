@@ -1,0 +1,9 @@
+C:\Users\Jason Salliotte\source\repos\Test\Test\bin\Debug\Test.exe.config
+C:\Users\Jason Salliotte\source\repos\Test\Test\bin\Debug\Test.exe
+C:\Users\Jason Salliotte\source\repos\Test\Test\bin\Debug\Test.pdb
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Interop.SldWorks.dll
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Test.csproj.ResolveComReference.cache
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Test.exe
+C:\Users\Jason Salliotte\source\repos\Test\Test\obj\Debug\Test.pdb
