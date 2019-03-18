@@ -21,7 +21,7 @@ class GunCase
 
         float metersToInches = 39.37f;
         string end = "";
-        while (end != "E")
+        while (end != "e")
         {
            
             Console.WriteLine("Enter Length");
@@ -31,7 +31,7 @@ class GunCase
           
             swModel.ForceRebuild3(true);
             Console.WriteLine("Enter E to exit or Press Any Key to enter new dimensions");
-            end = Console.ReadLine();
+            end = Console.ReadLine().ToLower();
 
 
         }

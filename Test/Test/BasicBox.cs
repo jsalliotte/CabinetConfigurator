@@ -23,7 +23,7 @@ class BasicBox
         string end = "";
         float metersToInches = 39.37f;
 
-        while (end != "E")
+        while (end != "e")
         {
 
             Console.WriteLine("Enter Length");
@@ -37,7 +37,7 @@ class BasicBox
 
             swModel.ForceRebuild3(true);
             Console.WriteLine("Enter E to exit or Press Any Key to enter new dimensions");
-            end = Console.ReadLine();
+            end = Console.ReadLine().ToLower();
 
 
         }
